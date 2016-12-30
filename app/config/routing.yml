@@ -1,0 +1,7 @@
+default.index:
+    path:      /
+    defaults:  { _controller: App:Default:index }
+
+default.random:
+    path:     /random/{limit}
+    defaults:  { _controller: App:Default:random }
