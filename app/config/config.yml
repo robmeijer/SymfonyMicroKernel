@@ -1,8 +1,8 @@
-imports:
-    - { resource: parameters.yml }
+parameters:
+    env(SECRET): ThisTokenIsNotSoSecretChangeIt
 
 framework:
-    secret: "%secret%"
+    secret: "%env(SECRET)%"
 
     templating:
         engines: ['twig']
