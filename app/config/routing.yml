@@ -1,7 +1,10 @@
-default.index:
-    path:      /
-    defaults:  { _controller: App:Default:index }
+default_index:
+    path:     /
+    methods:  [GET]
+    defaults: { _controller: App:Default:index }
 
-default.random:
-    path:     /random/{limit}
-    defaults:  { _controller: App:Default:random }
+default_random:
+    path:     random/{limit}
+    methods:  [GET]
+    defaults: { _controller: App:Default:random }
+    requirements: { limit: '\d+' }

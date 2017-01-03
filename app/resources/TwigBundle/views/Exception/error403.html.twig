@@ -1,0 +1,12 @@
+{% extends 'layouts/default.html.twig' %}
+
+{% block content %}
+    <h1 class="text-danger"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Error {{ status_code }}</h1>
+
+    <p class="lead">
+        Ask your manager or system administrator to grant you access to this resource.
+    </p>
+    <p>
+        Check out any misspelling in the URL or <a href="{{ path('default_index') }}">go back to the homepage</a>.
+    </p>
+{% endblock %}

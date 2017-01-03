@@ -1,0 +1,12 @@
+{% extends 'layouts/default.html.twig' %}
+
+{% block content %}
+    <h1 class="text-danger">Error {{ status_code }}</h1>
+
+    <p class="lead">
+        We couldn't find the page you requested.
+    </p>
+    <p>
+        Check out any misspelling in the URL or <a href="{{ path('default_index') }}">go back to the homepage</a>.
+    </p>
+{% endblock %}

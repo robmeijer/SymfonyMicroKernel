@@ -1,0 +1,12 @@
+{% extends 'layouts/default.html.twig' %}
+
+{% block content %}
+    <h1 class="text-danger">Error {{ status_code }}</h1>
+
+    <p class="lead">
+        There was an unknown error (HTTP {{ status_code }}) that prevented your request from completing.
+    </p>
+    <p>
+        Try loading this page again in some minutes or <a href="{{ path('default_index') }}">go back to the homepage</a>.
+    </p>
+{% endblock %}
